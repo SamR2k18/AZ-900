@@ -1,0 +1,24 @@
+Requesting a Cloud Shell.Succeeded.
+Connecting terminal...
+
+soumen@Azure:~$ az vm Create --resource-group "myResourceGroup" --name "dev.windows.com" --image "win2019DataCenter" --admin-username "sam_tech" --admin-password "Sam@123456789"
+Deployment failed. Correlation ID: f6611cc1-8e99-4e0d-a40d-1a9d98b9cf70. {
+  "error": {
+    "code": "InvalidParameter",
+    "message": "Windows computer name cannot be more than 15 characters long, be entirely numeric, or contain the following characters: ` ~ ! @ # $ % ^ & * ( ) = + _ [] { } \\ | ; : . ' \" , < > / ?.",
+    "target": "computerName"
+  }}
+soumen@Azure:~$ az vm Create --resource-group "myResourceGroup" --name "devwindows" --image "win2019DataCenter" --admin-username "sam_tech" --admin-password "Sam@123456789"
+{
+  "fqdns": "",
+  "id": "/subscriptions/406065f6-cfde-49da-9e13-8eed8a3f084c/resourceGroups/myResourceGroup/providers/Microsoft.Compute/virtualMachines/devwindows",
+  "location": "northcentralus",
+  "macAddress": "00-0D-3A-60-2A-30",
+  "powerState": "VM running",
+  "privateIpAddress": "10.0.0.5",
+  "publicIpAddress": "65.52.236.172",
+  "resourceGroup": "myResourceGroup",
+  "zones": ""
+}
+soumen@Azure:~$ ^C
+soumen@Azure:~$

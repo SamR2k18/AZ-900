@@ -1,0 +1,49 @@
+# Craete a file in Visual Text Editor
+    $ touch filename.Text
+    $ git add .
+    $ git commit -m "any comment"
+    $ git push -u origin master
+    $ git status  
+# Make sure you have already created a resource group
+    #CLI Command -- az group create --name MyRG1 --location "NorthCentralUS" 
+# Go to Azure Portal and open Azure bash/Terminal
+    #Create VM inside logical container 
+    #USE CLI to createRun the command  ---- >
+    # az vm create --resource-group "MyRG1" --name "Linux" --image "UbuntuLTS" --admin-username "samsystem2019" --admin-password "Sam@123456789" --location "NorthCentralUS"
+    
+# Vm Created and the data can  b4 available in Json Format
+orthCentralUS"
+{
+  "fqdns": "",
+  "id": "/subscriptions/406065f6-cfde-49da-9e13-8eed8a3f084c/resourceGroups/MyRG1/providers/Microsoft.Compute/virtualMachines/Linux",
+  "location": "northcentralus",
+  "macAddress": "00-0D-3A-60-67-2B",
+  "powerState": "VM running",
+  "privateIpAddress": "10.0.0.4",
+  "publicIpAddress": "52.162.122.115",
+  "resourceGroup": "MyRG1",
+  "zones": ""
+}
+
+# use this name to connect the Vm remotely 
+SM@SM-PC MINGW32 ~ (master)
+$ ssh samsystem2019@52.162.122.115
+provide password you can't see
+
+nowthe git will show you the vm name
+#Use command to check the VM 
+# uname -a
+
+# Install web server
+Command sudo apt-get Install apache2
+it will be installed in the remote system...
+
+# Check if the apache is running correctly
+sudo systemctl ststus apache2
+
+I goty stuck here
+# need to create a html forlder and put some thing in it
+
+# CElinks to check the website
+
+# Create Security group from Networking to see in browser

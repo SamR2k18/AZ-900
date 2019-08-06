@@ -1,0 +1,5 @@
+# go to Storage--> storage Account-->
+# UI mode create Sql server 
+ Create storage
+
+How to create storage / sql server using command 
